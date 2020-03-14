@@ -12,10 +12,17 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    /*
+        Managed Object and Managed Object context
+     1. Core data 초기화
+     
+     */
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Core Data Init (1)
+        DataManager.shared.setup(modelName: "Sample")
+        
         return true
     }
 

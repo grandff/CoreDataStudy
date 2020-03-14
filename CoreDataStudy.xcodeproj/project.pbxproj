@@ -14,6 +14,10 @@
 		1BA5DA91241CE2C700065C42 /* CoreDataStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DA8F241CE2C700065C42 /* CoreDataStudy.xcdatamodeld */; };
 		1BA5DA93241CE2C900065C42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5DA92241CE2C900065C42 /* Assets.xcassets */; };
 		1BA5DA96241CE2C900065C42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5DA94241CE2C900065C42 /* LaunchScreen.storyboard */; };
+		1BA5DAA6241CF8DF00065C42 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DAA5241CF8DF00065C42 /* DataManager.swift */; };
+		1BA5DAA9241CFA7700065C42 /* Sample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DAA7241CFA7700065C42 /* Sample.xcdatamodeld */; };
+		1BA5DAAC241CFAF600065C42 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DAAA241CFAF600065C42 /* Person+CoreDataClass.swift */; };
+		1BA5DAAD241CFAF600065C42 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DAAB241CFAF600065C42 /* Person+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		1BA5DA92241CE2C900065C42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BA5DA95241CE2C900065C42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BA5DA97241CE2C900065C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA5DAA5241CF8DF00065C42 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		1BA5DAA8241CFA7700065C42 /* Sample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sample.xcdatamodel; sourceTree = "<group>"; };
+		1BA5DAAA241CFAF600065C42 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		1BA5DAAB241CFAF600065C42 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		1BA5DA85241CE2C700065C42 /* CoreDataStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1BA5DAA4241CF8CF00065C42 /* Shared */,
 				1BA5DA86241CE2C700065C42 /* AppDelegate.swift */,
 				1BA5DA88241CE2C700065C42 /* SceneDelegate.swift */,
 				1BA5DA8A241CE2C700065C42 /* ViewController.swift */,
@@ -68,6 +77,17 @@
 				1BA5DA8F241CE2C700065C42 /* CoreDataStudy.xcdatamodeld */,
 			);
 			path = CoreDataStudy;
+			sourceTree = "<group>";
+		};
+		1BA5DAA4241CF8CF00065C42 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1BA5DAAA241CFAF600065C42 /* Person+CoreDataClass.swift */,
+				1BA5DAAB241CFAF600065C42 /* Person+CoreDataProperties.swift */,
+				1BA5DAA5241CF8DF00065C42 /* DataManager.swift */,
+				1BA5DAA7241CFA7700065C42 /* Sample.xcdatamodeld */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA5DA8B241CE2C700065C42 /* ViewController.swift in Sources */,
+				1BA5DAAC241CFAF600065C42 /* Person+CoreDataClass.swift in Sources */,
+				1BA5DAA6241CF8DF00065C42 /* DataManager.swift in Sources */,
 				1BA5DA87241CE2C700065C42 /* AppDelegate.swift in Sources */,
+				1BA5DAAD241CFAF600065C42 /* Person+CoreDataProperties.swift in Sources */,
+				1BA5DAA9241CFA7700065C42 /* Sample.xcdatamodeld in Sources */,
 				1BA5DA91241CE2C700065C42 /* CoreDataStudy.xcdatamodeld in Sources */,
 				1BA5DA89241CE2C700065C42 /* SceneDelegate.swift in Sources */,
 			);
@@ -349,6 +373,16 @@
 			);
 			currentVersion = 1BA5DA90241CE2C700065C42 /* CoreDataStudy.xcdatamodel */;
 			path = CoreDataStudy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		1BA5DAA7241CFA7700065C42 /* Sample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1BA5DAA8241CFA7700065C42 /* Sample.xcdatamodel */,
+			);
+			currentVersion = 1BA5DAA8241CFA7700065C42 /* Sample.xcdatamodel */;
+			path = Sample.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
