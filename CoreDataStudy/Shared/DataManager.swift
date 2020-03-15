@@ -26,6 +26,8 @@ class DataManager{
      7. Appdelegate 에서 Core Data 초기화
      */
     
+    
+    
     // 싱글톤으로 구현 (2)
     static let shared = DataManager()
     private init() {}

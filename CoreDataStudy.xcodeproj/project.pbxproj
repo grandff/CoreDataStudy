@@ -16,8 +16,11 @@
 		1BA5DA96241CE2C900065C42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5DA94241CE2C900065C42 /* LaunchScreen.storyboard */; };
 		1BA5DAA6241CF8DF00065C42 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DAA5241CF8DF00065C42 /* DataManager.swift */; };
 		1BA5DAA9241CFA7700065C42 /* Sample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DAA7241CFA7700065C42 /* Sample.xcdatamodeld */; };
-		1BA5DAAC241CFAF600065C42 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DAAA241CFAF600065C42 /* Person+CoreDataClass.swift */; };
-		1BA5DAAD241CFAF600065C42 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DAAB241CFAF600065C42 /* Person+CoreDataProperties.swift */; };
+		1BF83AFD241DF37000E9401F /* ManagedObject.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF83AFC241DF37000E9401F /* ManagedObject.storyboard */; };
+		1BF83AFF241DF62000E9401F /* ManagedObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF83AFE241DF62000E9401F /* ManagedObjectViewController.swift */; };
+		1BF83B01241DF7FC00E9401F /* PersonComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF83B00241DF7FC00E9401F /* PersonComposeViewController.swift */; };
+		1BF83B03241DFA7000E9401F /* DataManager+Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF83B02241DFA7000E9401F /* DataManager+Person.swift */; };
+		1BF83B06241DFB8B00E9401F /* PersonEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF83B04241DFB8B00E9401F /* PersonEntity+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +35,11 @@
 		1BA5DA97241CE2C900065C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA5DAA5241CF8DF00065C42 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		1BA5DAA8241CFA7700065C42 /* Sample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sample.xcdatamodel; sourceTree = "<group>"; };
-		1BA5DAAA241CFAF600065C42 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		1BA5DAAB241CFAF600065C42 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		1BF83AFC241DF37000E9401F /* ManagedObject.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManagedObject.storyboard; sourceTree = "<group>"; };
+		1BF83AFE241DF62000E9401F /* ManagedObjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectViewController.swift; sourceTree = "<group>"; };
+		1BF83B00241DF7FC00E9401F /* PersonComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonComposeViewController.swift; sourceTree = "<group>"; };
+		1BF83B02241DFA7000E9401F /* DataManager+Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataManager+Person.swift"; sourceTree = "<group>"; };
+		1BF83B04241DFB8B00E9401F /* PersonEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 		1BA5DA85241CE2C700065C42 /* CoreDataStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1BF83AFB241DF30800E9401F /* ManagedObject */,
 				1BA5DAA4241CF8CF00065C42 /* Shared */,
 				1BA5DA86241CE2C700065C42 /* AppDelegate.swift */,
 				1BA5DA88241CE2C700065C42 /* SceneDelegate.swift */,
@@ -82,12 +89,22 @@
 		1BA5DAA4241CF8CF00065C42 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				1BA5DAAA241CFAF600065C42 /* Person+CoreDataClass.swift */,
-				1BA5DAAB241CFAF600065C42 /* Person+CoreDataProperties.swift */,
+				1BF83B04241DFB8B00E9401F /* PersonEntity+CoreDataClass.swift */,
 				1BA5DAA5241CF8DF00065C42 /* DataManager.swift */,
 				1BA5DAA7241CFA7700065C42 /* Sample.xcdatamodeld */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		1BF83AFB241DF30800E9401F /* ManagedObject */ = {
+			isa = PBXGroup;
+			children = (
+				1BF83AFC241DF37000E9401F /* ManagedObject.storyboard */,
+				1BF83AFE241DF62000E9401F /* ManagedObjectViewController.swift */,
+				1BF83B00241DF7FC00E9401F /* PersonComposeViewController.swift */,
+				1BF83B02241DFA7000E9401F /* DataManager+Person.swift */,
+			);
+			path = ManagedObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +168,7 @@
 				1BA5DA96241CE2C900065C42 /* LaunchScreen.storyboard in Resources */,
 				1BA5DA93241CE2C900065C42 /* Assets.xcassets in Resources */,
 				1BA5DA8E241CE2C700065C42 /* Main.storyboard in Resources */,
+				1BF83AFD241DF37000E9401F /* ManagedObject.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,12 +180,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA5DA8B241CE2C700065C42 /* ViewController.swift in Sources */,
-				1BA5DAAC241CFAF600065C42 /* Person+CoreDataClass.swift in Sources */,
+				1BF83B03241DFA7000E9401F /* DataManager+Person.swift in Sources */,
 				1BA5DAA6241CF8DF00065C42 /* DataManager.swift in Sources */,
 				1BA5DA87241CE2C700065C42 /* AppDelegate.swift in Sources */,
-				1BA5DAAD241CFAF600065C42 /* Person+CoreDataProperties.swift in Sources */,
+				1BF83B01241DF7FC00E9401F /* PersonComposeViewController.swift in Sources */,
+				1BF83B06241DFB8B00E9401F /* PersonEntity+CoreDataClass.swift in Sources */,
 				1BA5DAA9241CFA7700065C42 /* Sample.xcdatamodeld in Sources */,
 				1BA5DA91241CE2C700065C42 /* CoreDataStudy.xcdatamodeld in Sources */,
+				1BF83AFF241DF62000E9401F /* ManagedObjectViewController.swift in Sources */,
 				1BA5DA89241CE2C700065C42 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
