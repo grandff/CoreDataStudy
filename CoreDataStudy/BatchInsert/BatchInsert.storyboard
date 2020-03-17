@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EYJ-u9-Hjy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Batch Insert-->
+        <scene sceneID="aFL-qM-BHC">
+            <objects>
+                <viewController id="EYJ-u9-Hjy" customClass="BatchInsertViewController" customModule="CoreDataStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dfG-lI-vEk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epz-rU-z9Y">
+                                <rect key="frame" x="194.5" y="424" width="25" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25O-82-Nqm">
+                                <rect key="frame" x="20" y="799" width="374" height="63"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="1kO-da-vRh"/>
+                                    <constraint firstAttribute="height" constant="63" id="x28-4u-wIC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Batch Insert">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="batchInsert:" destination="EYJ-u9-Hjy" eventType="touchUpInside" id="Fy8-rR-XEV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sKu-yN-ZMv" firstAttribute="trailing" secondItem="25O-82-Nqm" secondAttribute="trailing" constant="20" id="0sH-Z2-bE7"/>
+                            <constraint firstItem="25O-82-Nqm" firstAttribute="bottom" secondItem="sKu-yN-ZMv" secondAttribute="bottom" id="1hE-Q1-z5F"/>
+                            <constraint firstItem="Epz-rU-z9Y" firstAttribute="centerY" secondItem="dfG-lI-vEk" secondAttribute="centerY" id="AQs-ha-CGP"/>
+                            <constraint firstItem="Epz-rU-z9Y" firstAttribute="centerX" secondItem="dfG-lI-vEk" secondAttribute="centerX" id="Ewe-qj-IaE"/>
+                            <constraint firstItem="25O-82-Nqm" firstAttribute="top" secondItem="Epz-rU-z9Y" secondAttribute="bottom" constant="327" id="Kao-Wy-pTp"/>
+                            <constraint firstItem="25O-82-Nqm" firstAttribute="leading" secondItem="sKu-yN-ZMv" secondAttribute="leading" constant="20" id="wCi-wy-IAx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sKu-yN-ZMv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Batch Insert" largeTitleDisplayMode="always" id="tDs-W3-JqY"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="countLabel" destination="Epz-rU-z9Y" id="yEt-jl-W3Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TKh-kU-7pN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+</document>

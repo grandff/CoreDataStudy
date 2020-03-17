@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B3ADCEA242078860036618F /* employee.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B3ADCE7242078850036618F /* employee.json */; };
+		1B3ADCEB242078860036618F /* department.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B3ADCE8242078860036618F /* department.json */; };
+		1B3ADCEC242078860036618F /* RawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3ADCE9242078860036618F /* RawData.swift */; };
+		1B3ADCEF242078D00036618F /* BatchInsert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3ADCEE242078D00036618F /* BatchInsert.storyboard */; };
+		1B3ADCF1242078E40036618F /* BatchInsertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3ADCF0242078E40036618F /* BatchInsertViewController.swift */; };
+		1B3ADCF324207A790036618F /* DataManager+BatchInsert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3ADCF224207A790036618F /* DataManager+BatchInsert.swift */; };
 		1BA5DA87241CE2C700065C42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DA86241CE2C700065C42 /* AppDelegate.swift */; };
 		1BA5DA89241CE2C700065C42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DA88241CE2C700065C42 /* SceneDelegate.swift */; };
 		1BA5DA8B241CE2C700065C42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DA8A241CE2C700065C42 /* ViewController.swift */; };
@@ -24,6 +30,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B3ADCE7242078850036618F /* employee.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = employee.json; sourceTree = "<group>"; };
+		1B3ADCE8242078860036618F /* department.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = department.json; sourceTree = "<group>"; };
+		1B3ADCE9242078860036618F /* RawData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawData.swift; sourceTree = "<group>"; };
+		1B3ADCEE242078D00036618F /* BatchInsert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BatchInsert.storyboard; sourceTree = "<group>"; };
+		1B3ADCF0242078E40036618F /* BatchInsertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchInsertViewController.swift; sourceTree = "<group>"; };
+		1B3ADCF224207A790036618F /* DataManager+BatchInsert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataManager+BatchInsert.swift"; sourceTree = "<group>"; };
 		1BA5DA83241CE2C700065C42 /* CoreDataStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA5DA86241CE2C700065C42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BA5DA88241CE2C700065C42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +65,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B3ADCE6242078690036618F /* RawData */ = {
+			isa = PBXGroup;
+			children = (
+				1B3ADCE8242078860036618F /* department.json */,
+				1B3ADCE7242078850036618F /* employee.json */,
+				1B3ADCE9242078860036618F /* RawData.swift */,
+			);
+			path = RawData;
+			sourceTree = "<group>";
+		};
+		1B3ADCED2420788F0036618F /* BatchInsert */ = {
+			isa = PBXGroup;
+			children = (
+				1B3ADCEE242078D00036618F /* BatchInsert.storyboard */,
+				1B3ADCF0242078E40036618F /* BatchInsertViewController.swift */,
+				1B3ADCF224207A790036618F /* DataManager+BatchInsert.swift */,
+			);
+			path = BatchInsert;
+			sourceTree = "<group>";
+		};
 		1BA5DA7A241CE2C700065C42 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +104,8 @@
 		1BA5DA85241CE2C700065C42 /* CoreDataStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1B3ADCED2420788F0036618F /* BatchInsert */,
+				1B3ADCE6242078690036618F /* RawData */,
 				1BF83AFB241DF30800E9401F /* ManagedObject */,
 				1BA5DAA4241CF8CF00065C42 /* Shared */,
 				1BA5DA86241CE2C700065C42 /* AppDelegate.swift */,
@@ -166,9 +200,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA5DA96241CE2C900065C42 /* LaunchScreen.storyboard in Resources */,
+				1B3ADCEB242078860036618F /* department.json in Resources */,
 				1BA5DA93241CE2C900065C42 /* Assets.xcassets in Resources */,
+				1B3ADCEF242078D00036618F /* BatchInsert.storyboard in Resources */,
 				1BA5DA8E241CE2C700065C42 /* Main.storyboard in Resources */,
 				1BF83AFD241DF37000E9401F /* ManagedObject.storyboard in Resources */,
+				1B3ADCEA242078860036618F /* employee.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,13 +216,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3ADCF1242078E40036618F /* BatchInsertViewController.swift in Sources */,
 				1BA5DA8B241CE2C700065C42 /* ViewController.swift in Sources */,
 				1BF83B03241DFA7000E9401F /* DataManager+Person.swift in Sources */,
 				1BA5DAA6241CF8DF00065C42 /* DataManager.swift in Sources */,
 				1BA5DA87241CE2C700065C42 /* AppDelegate.swift in Sources */,
 				1BF83B01241DF7FC00E9401F /* PersonComposeViewController.swift in Sources */,
 				1BF83B06241DFB8B00E9401F /* PersonEntity+CoreDataClass.swift in Sources */,
+				1B3ADCF324207A790036618F /* DataManager+BatchInsert.swift in Sources */,
 				1BA5DAA9241CFA7700065C42 /* Sample.xcdatamodeld in Sources */,
+				1B3ADCEC242078860036618F /* RawData.swift in Sources */,
 				1BA5DA91241CE2C700065C42 /* CoreDataStudy.xcdatamodeld in Sources */,
 				1BF83AFF241DF62000E9401F /* ManagedObjectViewController.swift in Sources */,
 				1BA5DA89241CE2C700065C42 /* SceneDelegate.swift in Sources */,
