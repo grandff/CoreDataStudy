@@ -71,6 +71,7 @@ class BatchInsertViewController: UIViewController {
                     // context 저장
                     do{
                         try context.save()
+                        print("fucking success")
                     }catch{
                         print("fucking error 1 :: \(error.localizedDescription)")
                     }

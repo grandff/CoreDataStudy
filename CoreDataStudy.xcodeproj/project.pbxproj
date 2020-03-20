@@ -13,6 +13,10 @@
 		1B3ADCEF242078D00036618F /* BatchInsert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3ADCEE242078D00036618F /* BatchInsert.storyboard */; };
 		1B3ADCF1242078E40036618F /* BatchInsertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3ADCF0242078E40036618F /* BatchInsertViewController.swift */; };
 		1B3ADCF324207A790036618F /* DataManager+BatchInsert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3ADCF224207A790036618F /* DataManager+BatchInsert.swift */; };
+		1B9C20102424A03900A09FD8 /* FetchRequest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9C200F2424A03900A09FD8 /* FetchRequest.storyboard */; };
+		1B9C20122424A13400A09FD8 /* FetchAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C20112424A13400A09FD8 /* FetchAllViewController.swift */; };
+		1B9C20142424A7FA00A09FD8 /* SortTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C20132424A7FA00A09FD8 /* SortTableViewController.swift */; };
+		1B9C20162424C24B00A09FD8 /* ResultTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C20152424C24B00A09FD8 /* ResultTypesViewController.swift */; };
 		1BA5DA87241CE2C700065C42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DA86241CE2C700065C42 /* AppDelegate.swift */; };
 		1BA5DA89241CE2C700065C42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DA88241CE2C700065C42 /* SceneDelegate.swift */; };
 		1BA5DA8B241CE2C700065C42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DA8A241CE2C700065C42 /* ViewController.swift */; };
@@ -36,6 +40,10 @@
 		1B3ADCEE242078D00036618F /* BatchInsert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BatchInsert.storyboard; sourceTree = "<group>"; };
 		1B3ADCF0242078E40036618F /* BatchInsertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchInsertViewController.swift; sourceTree = "<group>"; };
 		1B3ADCF224207A790036618F /* DataManager+BatchInsert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataManager+BatchInsert.swift"; sourceTree = "<group>"; };
+		1B9C200F2424A03900A09FD8 /* FetchRequest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FetchRequest.storyboard; sourceTree = "<group>"; };
+		1B9C20112424A13400A09FD8 /* FetchAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAllViewController.swift; sourceTree = "<group>"; };
+		1B9C20132424A7FA00A09FD8 /* SortTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTableViewController.swift; sourceTree = "<group>"; };
+		1B9C20152424C24B00A09FD8 /* ResultTypesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTypesViewController.swift; sourceTree = "<group>"; };
 		1BA5DA83241CE2C700065C42 /* CoreDataStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA5DA86241CE2C700065C42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BA5DA88241CE2C700065C42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +93,17 @@
 			path = BatchInsert;
 			sourceTree = "<group>";
 		};
+		1B9C200E24249FDE00A09FD8 /* FetchRequest */ = {
+			isa = PBXGroup;
+			children = (
+				1B9C200F2424A03900A09FD8 /* FetchRequest.storyboard */,
+				1B9C20112424A13400A09FD8 /* FetchAllViewController.swift */,
+				1B9C20132424A7FA00A09FD8 /* SortTableViewController.swift */,
+				1B9C20152424C24B00A09FD8 /* ResultTypesViewController.swift */,
+			);
+			path = FetchRequest;
+			sourceTree = "<group>";
+		};
 		1BA5DA7A241CE2C700065C42 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +123,7 @@
 		1BA5DA85241CE2C700065C42 /* CoreDataStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1B9C200E24249FDE00A09FD8 /* FetchRequest */,
 				1B3ADCED2420788F0036618F /* BatchInsert */,
 				1B3ADCE6242078690036618F /* RawData */,
 				1BF83AFB241DF30800E9401F /* ManagedObject */,
@@ -200,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA5DA96241CE2C900065C42 /* LaunchScreen.storyboard in Resources */,
+				1B9C20102424A03900A09FD8 /* FetchRequest.storyboard in Resources */,
 				1B3ADCEB242078860036618F /* department.json in Resources */,
 				1BA5DA93241CE2C900065C42 /* Assets.xcassets in Resources */,
 				1B3ADCEF242078D00036618F /* BatchInsert.storyboard in Resources */,
@@ -223,10 +244,13 @@
 				1BA5DA87241CE2C700065C42 /* AppDelegate.swift in Sources */,
 				1BF83B01241DF7FC00E9401F /* PersonComposeViewController.swift in Sources */,
 				1BF83B06241DFB8B00E9401F /* PersonEntity+CoreDataClass.swift in Sources */,
+				1B9C20122424A13400A09FD8 /* FetchAllViewController.swift in Sources */,
 				1B3ADCF324207A790036618F /* DataManager+BatchInsert.swift in Sources */,
 				1BA5DAA9241CFA7700065C42 /* Sample.xcdatamodeld in Sources */,
 				1B3ADCEC242078860036618F /* RawData.swift in Sources */,
+				1B9C20142424A7FA00A09FD8 /* SortTableViewController.swift in Sources */,
 				1BA5DA91241CE2C700065C42 /* CoreDataStudy.xcdatamodeld in Sources */,
+				1B9C20162424C24B00A09FD8 /* ResultTypesViewController.swift in Sources */,
 				1BF83AFF241DF62000E9401F /* ManagedObjectViewController.swift in Sources */,
 				1BA5DA89241CE2C700065C42 /* SceneDelegate.swift in Sources */,
 			);

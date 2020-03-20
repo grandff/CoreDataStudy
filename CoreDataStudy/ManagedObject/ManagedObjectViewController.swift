@@ -24,6 +24,7 @@ class ManagedObjectViewController: UIViewController {
     // 데이터 받을 list (1)
     var list = [PersonEntity]()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,7 +40,7 @@ class ManagedObjectViewController: UIViewController {
     
     deinit {
         NotificationCenter.default.removeObserver(token)
-    }
+    }    
 }
 
 extension ManagedObjectViewController : UITableViewDataSource{
