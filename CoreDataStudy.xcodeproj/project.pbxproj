@@ -15,6 +15,8 @@
 		1B3ADCF324207A790036618F /* DataManager+BatchInsert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3ADCF224207A790036618F /* DataManager+BatchInsert.swift */; };
 		1B90076E2428D72C00F63307 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90076D2428D72C00F63307 /* PagingViewController.swift */; };
 		1B9007702428D9BD00F63307 /* BatchSizeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90076F2428D9BD00F63307 /* BatchSizeTableViewController.swift */; };
+		1B9007722429B54000F63307 /* StoredFetchRequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9007712429B54000F63307 /* StoredFetchRequestTableViewController.swift */; };
+		1B9007742429B80D00F63307 /* FetchedPropertyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9007732429B80D00F63307 /* FetchedPropertyTableViewController.swift */; };
 		1B9C20102424A03900A09FD8 /* FetchRequest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9C200F2424A03900A09FD8 /* FetchRequest.storyboard */; };
 		1B9C20122424A13400A09FD8 /* FetchAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C20112424A13400A09FD8 /* FetchAllViewController.swift */; };
 		1B9C20142424A7FA00A09FD8 /* SortTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9C20132424A7FA00A09FD8 /* SortTableViewController.swift */; };
@@ -44,6 +46,8 @@
 		1B3ADCF224207A790036618F /* DataManager+BatchInsert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataManager+BatchInsert.swift"; sourceTree = "<group>"; };
 		1B90076D2428D72C00F63307 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		1B90076F2428D9BD00F63307 /* BatchSizeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchSizeTableViewController.swift; sourceTree = "<group>"; };
+		1B9007712429B54000F63307 /* StoredFetchRequestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredFetchRequestTableViewController.swift; sourceTree = "<group>"; };
+		1B9007732429B80D00F63307 /* FetchedPropertyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedPropertyTableViewController.swift; sourceTree = "<group>"; };
 		1B9C200F2424A03900A09FD8 /* FetchRequest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FetchRequest.storyboard; sourceTree = "<group>"; };
 		1B9C20112424A13400A09FD8 /* FetchAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAllViewController.swift; sourceTree = "<group>"; };
 		1B9C20132424A7FA00A09FD8 /* SortTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortTableViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				1B9C20152424C24B00A09FD8 /* ResultTypesViewController.swift */,
 				1B90076D2428D72C00F63307 /* PagingViewController.swift */,
 				1B90076F2428D9BD00F63307 /* BatchSizeTableViewController.swift */,
+				1B9007712429B54000F63307 /* StoredFetchRequestTableViewController.swift */,
+				1B9007732429B80D00F63307 /* FetchedPropertyTableViewController.swift */,
 			);
 			path = FetchRequest;
 			sourceTree = "<group>";
@@ -257,6 +263,8 @@
 				1BA5DAA9241CFA7700065C42 /* Sample.xcdatamodeld in Sources */,
 				1B3ADCEC242078860036618F /* RawData.swift in Sources */,
 				1B9C20142424A7FA00A09FD8 /* SortTableViewController.swift in Sources */,
+				1B9007742429B80D00F63307 /* FetchedPropertyTableViewController.swift in Sources */,
+				1B9007722429B54000F63307 /* StoredFetchRequestTableViewController.swift in Sources */,
 				1BA5DA91241CE2C700065C42 /* CoreDataStudy.xcdatamodeld in Sources */,
 				1B9C20162424C24B00A09FD8 /* ResultTypesViewController.swift in Sources */,
 				1BF83AFF241DF62000E9401F /* ManagedObjectViewController.swift in Sources */,

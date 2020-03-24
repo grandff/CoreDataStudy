@@ -3,6 +3,9 @@
     <entity name="Department" representedClassName="DepartmentEntity" syncable="YES" codeGenerationType="class">
         <attribute name="name" attributeType="String"/>
         <relationship name="employees" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Employee" inverseName="department" inverseEntity="Employee"/>
+        <fetchedProperty name="lowSalary" optional="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Employee" predicateString="salary &lt;= 30000"/>
+        </fetchedProperty>
         <uniquenessConstraints>
             <uniquenessConstraint>
                 <constraint value="name"/>
@@ -18,8 +21,9 @@
         <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name" attributeType="String"/>
     </entity>
+    <fetchRequest name="highSalary" entity="Employee" predicateString="department.name BEGINSWITH $deptName AND salary &gt;= 80000"/>
     <elements>
-        <element name="Department" positionX="-18" positionY="45" width="128" height="73"/>
+        <element name="Department" positionX="-18" positionY="45" width="128" height="41"/>
         <element name="Employee" positionX="-36" positionY="36" width="128" height="73"/>
         <element name="Person" positionX="-54" positionY="-9" width="128" height="88"/>
     </elements>
