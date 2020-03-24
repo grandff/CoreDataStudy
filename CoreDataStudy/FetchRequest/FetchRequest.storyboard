@@ -282,7 +282,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Batch Size" id="Ub5-xJ-gr3">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="L8U-qy-6Wu"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="L8U-qy-6Wu">
+                            <connections>
+                                <action selector="showType:" destination="CAd-jU-4hd" id="Sir-up-BNL"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WHh-ID-s0D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
