@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tdn-Yi-o1M">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Predicate-->
+        <scene sceneID="K6b-BJ-XJk">
+            <objects>
+                <viewController title="Predicate" id="Tdn-Yi-o1M" customClass="PredicateViewController" customModule="CoreDataStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p42-b0-HFn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" showsCancelButton="YES" showsScopeBar="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EBv-Lv-94i">
+                                <rect key="frame" x="0.0" y="88" width="414" height="103"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>name</string>
+                                    <string>min age</string>
+                                    <string>salary</string>
+                                    <string>dept</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="Tdn-Yi-o1M" id="rBb-Mi-UcR"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fT6-oK-tZH">
+                                <rect key="frame" x="0.0" y="191" width="414" height="685"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="kOQ-cb-0cr" detailTextLabel="VC8-co-TGa" style="IBUITableViewCellStyleValue1" id="wpP-4d-if3">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wpP-4d-if3" id="8rq-aH-lgE">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kOQ-cb-0cr">
+                                                    <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VC8-co-TGa">
+                                                    <rect key="frame" x="350" y="12" width="44" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Tdn-Yi-o1M" id="VJH-Mz-v6r"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fT6-oK-tZH" firstAttribute="trailing" secondItem="M12-5x-jHr" secondAttribute="trailing" id="Bw3-m8-8Km"/>
+                            <constraint firstItem="EBv-Lv-94i" firstAttribute="leading" secondItem="M12-5x-jHr" secondAttribute="leading" id="QT0-vx-cdy"/>
+                            <constraint firstItem="EBv-Lv-94i" firstAttribute="top" secondItem="M12-5x-jHr" secondAttribute="top" id="Qr9-DJ-Qoj"/>
+                            <constraint firstItem="fT6-oK-tZH" firstAttribute="top" secondItem="EBv-Lv-94i" secondAttribute="bottom" id="dvf-2O-1kj"/>
+                            <constraint firstItem="EBv-Lv-94i" firstAttribute="trailing" secondItem="M12-5x-jHr" secondAttribute="trailing" id="eN6-ri-cEQ"/>
+                            <constraint firstItem="fT6-oK-tZH" firstAttribute="top" secondItem="EBv-Lv-94i" secondAttribute="bottom" symbolic="YES" id="gMC-tj-WlV"/>
+                            <constraint firstItem="fT6-oK-tZH" firstAttribute="leading" secondItem="M12-5x-jHr" secondAttribute="leading" id="kvu-py-JoN"/>
+                            <constraint firstAttribute="bottom" secondItem="fT6-oK-tZH" secondAttribute="bottom" constant="20" symbolic="YES" id="pf5-cm-Lvr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M12-5x-jHr"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="listTableView" destination="fT6-oK-tZH" id="Thp-3Q-cdb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Wj-Y0-HHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="84.375"/>
+        </scene>
+    </scenes>
+</document>

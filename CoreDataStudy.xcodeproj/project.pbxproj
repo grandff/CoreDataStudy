@@ -13,6 +13,8 @@
 		1B3ADCEF242078D00036618F /* BatchInsert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3ADCEE242078D00036618F /* BatchInsert.storyboard */; };
 		1B3ADCF1242078E40036618F /* BatchInsertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3ADCF0242078E40036618F /* BatchInsertViewController.swift */; };
 		1B3ADCF324207A790036618F /* DataManager+BatchInsert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3ADCF224207A790036618F /* DataManager+BatchInsert.swift */; };
+		1B55996D242B029E001A9137 /* Predicate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B55996C242B029E001A9137 /* Predicate.storyboard */; };
+		1B55996F242B02B0001A9137 /* PredicateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55996E242B02B0001A9137 /* PredicateViewController.swift */; };
 		1B90076E2428D72C00F63307 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90076D2428D72C00F63307 /* PagingViewController.swift */; };
 		1B9007702428D9BD00F63307 /* BatchSizeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90076F2428D9BD00F63307 /* BatchSizeTableViewController.swift */; };
 		1B9007722429B54000F63307 /* StoredFetchRequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9007712429B54000F63307 /* StoredFetchRequestTableViewController.swift */; };
@@ -45,6 +47,8 @@
 		1B3ADCEE242078D00036618F /* BatchInsert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BatchInsert.storyboard; sourceTree = "<group>"; };
 		1B3ADCF0242078E40036618F /* BatchInsertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchInsertViewController.swift; sourceTree = "<group>"; };
 		1B3ADCF224207A790036618F /* DataManager+BatchInsert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataManager+BatchInsert.swift"; sourceTree = "<group>"; };
+		1B55996C242B029E001A9137 /* Predicate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Predicate.storyboard; sourceTree = "<group>"; };
+		1B55996E242B02B0001A9137 /* PredicateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateViewController.swift; sourceTree = "<group>"; };
 		1B90076D2428D72C00F63307 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
 		1B90076F2428D9BD00F63307 /* BatchSizeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchSizeTableViewController.swift; sourceTree = "<group>"; };
 		1B9007712429B54000F63307 /* StoredFetchRequestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredFetchRequestTableViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,15 @@
 			path = BatchInsert;
 			sourceTree = "<group>";
 		};
+		1B55996B242B026A001A9137 /* Predicate */ = {
+			isa = PBXGroup;
+			children = (
+				1B55996C242B029E001A9137 /* Predicate.storyboard */,
+				1B55996E242B02B0001A9137 /* PredicateViewController.swift */,
+			);
+			path = Predicate;
+			sourceTree = "<group>";
+		};
 		1B9C200E24249FDE00A09FD8 /* FetchRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +151,7 @@
 		1BA5DA85241CE2C700065C42 /* CoreDataStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1B55996B242B026A001A9137 /* Predicate */,
 				1B9C200E24249FDE00A09FD8 /* FetchRequest */,
 				1B3ADCED2420788F0036618F /* BatchInsert */,
 				1B3ADCE6242078690036618F /* RawData */,
@@ -234,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B55996D242B029E001A9137 /* Predicate.storyboard in Resources */,
 				1BA5DA96241CE2C900065C42 /* LaunchScreen.storyboard in Resources */,
 				1B9C20102424A03900A09FD8 /* FetchRequest.storyboard in Resources */,
 				1B3ADCEB242078860036618F /* department.json in Resources */,
@@ -256,6 +271,7 @@
 				1BA5DA8B241CE2C700065C42 /* ViewController.swift in Sources */,
 				1BF83B03241DFA7000E9401F /* DataManager+Person.swift in Sources */,
 				1B9007702428D9BD00F63307 /* BatchSizeTableViewController.swift in Sources */,
+				1B55996F242B02B0001A9137 /* PredicateViewController.swift in Sources */,
 				1B900776242A04B400F63307 /* AsyncFetchingTableViewController.swift in Sources */,
 				1BA5DAA6241CF8DF00065C42 /* DataManager.swift in Sources */,
 				1BA5DA87241CE2C700065C42 /* AppDelegate.swift in Sources */,
