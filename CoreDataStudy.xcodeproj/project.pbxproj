@@ -33,6 +33,8 @@
 		1BA5DA96241CE2C900065C42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA5DA94241CE2C900065C42 /* LaunchScreen.storyboard */; };
 		1BA5DAA6241CF8DF00065C42 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DAA5241CF8DF00065C42 /* DataManager.swift */; };
 		1BA5DAA9241CFA7700065C42 /* Sample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BA5DAA7241CFA7700065C42 /* Sample.xcdatamodeld */; };
+		1BCBC8A7242DAE70000E3D84 /* Expression.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCBC8A6242DAE70000E3D84 /* Expression.storyboard */; };
+		1BCBC8A9242DAF09000E3D84 /* ExpressionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCBC8A8242DAF09000E3D84 /* ExpressionViewController.swift */; };
 		1BF83AFD241DF37000E9401F /* ManagedObject.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BF83AFC241DF37000E9401F /* ManagedObject.storyboard */; };
 		1BF83AFF241DF62000E9401F /* ManagedObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF83AFE241DF62000E9401F /* ManagedObjectViewController.swift */; };
 		1BF83B01241DF7FC00E9401F /* PersonComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF83B00241DF7FC00E9401F /* PersonComposeViewController.swift */; };
@@ -69,6 +71,8 @@
 		1BA5DA97241CE2C900065C42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BA5DAA5241CF8DF00065C42 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		1BA5DAA8241CFA7700065C42 /* Sample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sample.xcdatamodel; sourceTree = "<group>"; };
+		1BCBC8A6242DAE70000E3D84 /* Expression.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Expression.storyboard; sourceTree = "<group>"; };
+		1BCBC8A8242DAF09000E3D84 /* ExpressionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionViewController.swift; sourceTree = "<group>"; };
 		1BF83AFC241DF37000E9401F /* ManagedObject.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManagedObject.storyboard; sourceTree = "<group>"; };
 		1BF83AFE241DF62000E9401F /* ManagedObjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectViewController.swift; sourceTree = "<group>"; };
 		1BF83B00241DF7FC00E9401F /* PersonComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonComposeViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 		1BA5DA85241CE2C700065C42 /* CoreDataStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1BCBC8A5242DAE4B000E3D84 /* Expression */,
 				1B55996B242B026A001A9137 /* Predicate */,
 				1B9C200E24249FDE00A09FD8 /* FetchRequest */,
 				1B3ADCED2420788F0036618F /* BatchInsert */,
@@ -177,6 +182,15 @@
 				1BA5DAA7241CFA7700065C42 /* Sample.xcdatamodeld */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		1BCBC8A5242DAE4B000E3D84 /* Expression */ = {
+			isa = PBXGroup;
+			children = (
+				1BCBC8A6242DAE70000E3D84 /* Expression.storyboard */,
+				1BCBC8A8242DAF09000E3D84 /* ExpressionViewController.swift */,
+			);
+			path = Expression;
 			sourceTree = "<group>";
 		};
 		1BF83AFB241DF30800E9401F /* ManagedObject */ = {
@@ -256,6 +270,7 @@
 				1B3ADCEF242078D00036618F /* BatchInsert.storyboard in Resources */,
 				1BA5DA8E241CE2C700065C42 /* Main.storyboard in Resources */,
 				1BF83AFD241DF37000E9401F /* ManagedObject.storyboard in Resources */,
+				1BCBC8A7242DAE70000E3D84 /* Expression.storyboard in Resources */,
 				1B3ADCEA242078860036618F /* employee.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +292,7 @@
 				1BA5DA87241CE2C700065C42 /* AppDelegate.swift in Sources */,
 				1B90076E2428D72C00F63307 /* PagingViewController.swift in Sources */,
 				1BF83B01241DF7FC00E9401F /* PersonComposeViewController.swift in Sources */,
+				1BCBC8A9242DAF09000E3D84 /* ExpressionViewController.swift in Sources */,
 				1BF83B06241DFB8B00E9401F /* PersonEntity+CoreDataClass.swift in Sources */,
 				1B9C20122424A13400A09FD8 /* FetchAllViewController.swift in Sources */,
 				1B3ADCF324207A790036618F /* DataManager+BatchInsert.swift in Sources */,
