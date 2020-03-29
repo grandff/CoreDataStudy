@@ -13,6 +13,8 @@
 		1B3ADCEF242078D00036618F /* BatchInsert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3ADCEE242078D00036618F /* BatchInsert.storyboard */; };
 		1B3ADCF1242078E40036618F /* BatchInsertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3ADCF0242078E40036618F /* BatchInsertViewController.swift */; };
 		1B3ADCF324207A790036618F /* DataManager+BatchInsert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3ADCF224207A790036618F /* DataManager+BatchInsert.swift */; };
+		1B3DF3502430856200E6F7E2 /* FetchedResultsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3DF34F2430856200E6F7E2 /* FetchedResultsController.storyboard */; };
+		1B3DF352243085D400E6F7E2 /* FetchedResultsControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF351243085D400E6F7E2 /* FetchedResultsControllerTableViewController.swift */; };
 		1B55996D242B029E001A9137 /* Predicate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B55996C242B029E001A9137 /* Predicate.storyboard */; };
 		1B55996F242B02B0001A9137 /* PredicateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55996E242B02B0001A9137 /* PredicateViewController.swift */; };
 		1B90076E2428D72C00F63307 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90076D2428D72C00F63307 /* PagingViewController.swift */; };
@@ -49,6 +51,8 @@
 		1B3ADCEE242078D00036618F /* BatchInsert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BatchInsert.storyboard; sourceTree = "<group>"; };
 		1B3ADCF0242078E40036618F /* BatchInsertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchInsertViewController.swift; sourceTree = "<group>"; };
 		1B3ADCF224207A790036618F /* DataManager+BatchInsert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataManager+BatchInsert.swift"; sourceTree = "<group>"; };
+		1B3DF34F2430856200E6F7E2 /* FetchedResultsController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FetchedResultsController.storyboard; sourceTree = "<group>"; };
+		1B3DF351243085D400E6F7E2 /* FetchedResultsControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedResultsControllerTableViewController.swift; sourceTree = "<group>"; };
 		1B55996C242B029E001A9137 /* Predicate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Predicate.storyboard; sourceTree = "<group>"; };
 		1B55996E242B02B0001A9137 /* PredicateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateViewController.swift; sourceTree = "<group>"; };
 		1B90076D2428D72C00F63307 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,15 @@
 			path = BatchInsert;
 			sourceTree = "<group>";
 		};
+		1B3DF34E2430821500E6F7E2 /* FetchedResultsController */ = {
+			isa = PBXGroup;
+			children = (
+				1B3DF34F2430856200E6F7E2 /* FetchedResultsController.storyboard */,
+				1B3DF351243085D400E6F7E2 /* FetchedResultsControllerTableViewController.swift */,
+			);
+			path = FetchedResultsController;
+			sourceTree = "<group>";
+		};
 		1B55996B242B026A001A9137 /* Predicate */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +168,7 @@
 		1BA5DA85241CE2C700065C42 /* CoreDataStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1B3DF34E2430821500E6F7E2 /* FetchedResultsController */,
 				1BCBC8A5242DAE4B000E3D84 /* Expression */,
 				1B55996B242B026A001A9137 /* Predicate */,
 				1B9C200E24249FDE00A09FD8 /* FetchRequest */,
@@ -271,6 +285,7 @@
 				1BA5DA8E241CE2C700065C42 /* Main.storyboard in Resources */,
 				1BF83AFD241DF37000E9401F /* ManagedObject.storyboard in Resources */,
 				1BCBC8A7242DAE70000E3D84 /* Expression.storyboard in Resources */,
+				1B3DF3502430856200E6F7E2 /* FetchedResultsController.storyboard in Resources */,
 				1B3ADCEA242078860036618F /* employee.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +309,7 @@
 				1BF83B01241DF7FC00E9401F /* PersonComposeViewController.swift in Sources */,
 				1BCBC8A9242DAF09000E3D84 /* ExpressionViewController.swift in Sources */,
 				1BF83B06241DFB8B00E9401F /* PersonEntity+CoreDataClass.swift in Sources */,
+				1B3DF352243085D400E6F7E2 /* FetchedResultsControllerTableViewController.swift in Sources */,
 				1B9C20122424A13400A09FD8 /* FetchAllViewController.swift in Sources */,
 				1B3ADCF324207A790036618F /* DataManager+BatchInsert.swift in Sources */,
 				1BA5DAA9241CFA7700065C42 /* Sample.xcdatamodeld in Sources */,
