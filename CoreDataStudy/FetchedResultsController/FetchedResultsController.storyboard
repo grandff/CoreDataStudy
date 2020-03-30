@@ -46,7 +46,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Fetched Results Controller" id="3xL-PY-f68">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="2MB-8e-M2U"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="2MB-8e-M2U">
+                            <connections>
+                                <action selector="showMenu:" destination="9Rz-qG-IEr" id="Fe1-Mc-Jzi"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
