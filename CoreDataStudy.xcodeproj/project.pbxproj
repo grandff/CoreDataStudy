@@ -15,6 +15,8 @@
 		1B3ADCF324207A790036618F /* DataManager+BatchInsert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3ADCF224207A790036618F /* DataManager+BatchInsert.swift */; };
 		1B3DF3502430856200E6F7E2 /* FetchedResultsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3DF34F2430856200E6F7E2 /* FetchedResultsController.storyboard */; };
 		1B3DF352243085D400E6F7E2 /* FetchedResultsControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF351243085D400E6F7E2 /* FetchedResultsControllerTableViewController.swift */; };
+		1B3DF35524319D8C00E6F7E2 /* Faulting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3DF35424319D8C00E6F7E2 /* Faulting.storyboard */; };
+		1B3DF35724319D9F00E6F7E2 /* FaultingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF35624319D9F00E6F7E2 /* FaultingTableViewController.swift */; };
 		1B55996D242B029E001A9137 /* Predicate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B55996C242B029E001A9137 /* Predicate.storyboard */; };
 		1B55996F242B02B0001A9137 /* PredicateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55996E242B02B0001A9137 /* PredicateViewController.swift */; };
 		1B90076E2428D72C00F63307 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90076D2428D72C00F63307 /* PagingViewController.swift */; };
@@ -53,6 +55,8 @@
 		1B3ADCF224207A790036618F /* DataManager+BatchInsert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataManager+BatchInsert.swift"; sourceTree = "<group>"; };
 		1B3DF34F2430856200E6F7E2 /* FetchedResultsController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FetchedResultsController.storyboard; sourceTree = "<group>"; };
 		1B3DF351243085D400E6F7E2 /* FetchedResultsControllerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedResultsControllerTableViewController.swift; sourceTree = "<group>"; };
+		1B3DF35424319D8C00E6F7E2 /* Faulting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Faulting.storyboard; sourceTree = "<group>"; };
+		1B3DF35624319D9F00E6F7E2 /* FaultingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaultingTableViewController.swift; sourceTree = "<group>"; };
 		1B55996C242B029E001A9137 /* Predicate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Predicate.storyboard; sourceTree = "<group>"; };
 		1B55996E242B02B0001A9137 /* PredicateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateViewController.swift; sourceTree = "<group>"; };
 		1B90076D2428D72C00F63307 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +128,15 @@
 			path = FetchedResultsController;
 			sourceTree = "<group>";
 		};
+		1B3DF35324319D7E00E6F7E2 /* Faulting */ = {
+			isa = PBXGroup;
+			children = (
+				1B3DF35424319D8C00E6F7E2 /* Faulting.storyboard */,
+				1B3DF35624319D9F00E6F7E2 /* FaultingTableViewController.swift */,
+			);
+			path = Faulting;
+			sourceTree = "<group>";
+		};
 		1B55996B242B026A001A9137 /* Predicate */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +181,7 @@
 		1BA5DA85241CE2C700065C42 /* CoreDataStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1B3DF35324319D7E00E6F7E2 /* Faulting */,
 				1B3DF34E2430821500E6F7E2 /* FetchedResultsController */,
 				1BCBC8A5242DAE4B000E3D84 /* Expression */,
 				1B55996B242B026A001A9137 /* Predicate */,
@@ -276,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3DF35524319D8C00E6F7E2 /* Faulting.storyboard in Resources */,
 				1B55996D242B029E001A9137 /* Predicate.storyboard in Resources */,
 				1BA5DA96241CE2C900065C42 /* LaunchScreen.storyboard in Resources */,
 				1B9C20102424A03900A09FD8 /* FetchRequest.storyboard in Resources */,
@@ -305,6 +320,7 @@
 				1B900776242A04B400F63307 /* AsyncFetchingTableViewController.swift in Sources */,
 				1BA5DAA6241CF8DF00065C42 /* DataManager.swift in Sources */,
 				1BA5DA87241CE2C700065C42 /* AppDelegate.swift in Sources */,
+				1B3DF35724319D9F00E6F7E2 /* FaultingTableViewController.swift in Sources */,
 				1B90076E2428D72C00F63307 /* PagingViewController.swift in Sources */,
 				1BF83B01241DF7FC00E9401F /* PersonComposeViewController.swift in Sources */,
 				1BCBC8A9242DAF09000E3D84 /* ExpressionViewController.swift in Sources */,
