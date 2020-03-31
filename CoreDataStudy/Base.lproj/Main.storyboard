@@ -205,7 +205,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fRl-Xv-SPU">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="7. BLOB(Bianry Large Object)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fRl-Xv-SPU">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -214,6 +214,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="xBw-xE-0Z6" kind="show" id="n6R-Fj-IC4"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="AK5-bn-2Fj" style="IBUITableViewCellStyleDefault" id="49l-pg-QxG">
                                         <rect key="frame" x="0.0" y="489" width="414" height="43.5"/>
@@ -397,6 +400,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zkk-i9-vqE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1475" y="207"/>
+        </scene>
+        <!--Blob-->
+        <scene sceneID="1Bn-q5-VK1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Blob" id="xBw-xE-0Z6" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CvB-Kf-LSV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dHm-za-8BI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1522" y="249"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jp6-eV-R8Z">
