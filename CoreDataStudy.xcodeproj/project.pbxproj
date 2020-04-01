@@ -27,6 +27,8 @@
 		1B3DF36E243488F000E6F7E2 /* DataManger+Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF36D243488F000E6F7E2 /* DataManger+Department.swift */; };
 		1B3DF3702434896E00E6F7E2 /* DataManager+Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF36F2434896E00E6F7E2 /* DataManager+Employee.swift */; };
 		1B3DF37224348B9E00E6F7E2 /* RDepartmentComposerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF37124348B9E00E6F7E2 /* RDepartmentComposerTableViewController.swift */; };
+		1B3DF375243499B600E6F7E2 /* EmployeeEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF373243499B600E6F7E2 /* EmployeeEntity+CoreDataClass.swift */; };
+		1B3DF376243499B600E6F7E2 /* EmployeeEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF374243499B600E6F7E2 /* EmployeeEntity+CoreDataProperties.swift */; };
 		1B55996D242B029E001A9137 /* Predicate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B55996C242B029E001A9137 /* Predicate.storyboard */; };
 		1B55996F242B02B0001A9137 /* PredicateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55996E242B02B0001A9137 /* PredicateViewController.swift */; };
 		1B90076E2428D72C00F63307 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90076D2428D72C00F63307 /* PagingViewController.swift */; };
@@ -77,6 +79,8 @@
 		1B3DF36D243488F000E6F7E2 /* DataManger+Department.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataManger+Department.swift"; sourceTree = "<group>"; };
 		1B3DF36F2434896E00E6F7E2 /* DataManager+Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataManager+Employee.swift"; sourceTree = "<group>"; };
 		1B3DF37124348B9E00E6F7E2 /* RDepartmentComposerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDepartmentComposerTableViewController.swift; sourceTree = "<group>"; };
+		1B3DF373243499B600E6F7E2 /* EmployeeEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmployeeEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		1B3DF374243499B600E6F7E2 /* EmployeeEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmployeeEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		1B55996C242B029E001A9137 /* Predicate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Predicate.storyboard; sourceTree = "<group>"; };
 		1B55996E242B02B0001A9137 /* PredicateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateViewController.swift; sourceTree = "<group>"; };
 		1B90076D2428D72C00F63307 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
@@ -259,6 +263,8 @@
 		1BA5DAA4241CF8CF00065C42 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				1B3DF373243499B600E6F7E2 /* EmployeeEntity+CoreDataClass.swift */,
+				1B3DF374243499B600E6F7E2 /* EmployeeEntity+CoreDataProperties.swift */,
 				1BF83B04241DFB8B00E9401F /* PersonEntity+CoreDataClass.swift */,
 				1BA5DAA5241CF8DF00065C42 /* DataManager.swift */,
 				1BA5DAA7241CFA7700065C42 /* Sample.xcdatamodeld */,
@@ -369,9 +375,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3DF376243499B600E6F7E2 /* EmployeeEntity+CoreDataProperties.swift in Sources */,
 				1B3ADCF1242078E40036618F /* BatchInsertViewController.swift in Sources */,
 				1B3DF3652434492D00E6F7E2 /* ValidationViewController.swift in Sources */,
 				1BA5DA8B241CE2C700065C42 /* ViewController.swift in Sources */,
+				1B3DF375243499B600E6F7E2 /* EmployeeEntity+CoreDataClass.swift in Sources */,
 				1B3DF36C2434884C00E6F7E2 /* REmployeeListViewController.swift in Sources */,
 				1BF83B03241DFA7000E9401F /* DataManager+Person.swift in Sources */,
 				1B9007702428D9BD00F63307 /* BatchSizeTableViewController.swift in Sources */,

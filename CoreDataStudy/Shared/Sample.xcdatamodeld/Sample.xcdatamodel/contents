@@ -12,7 +12,7 @@
             </uniquenessConstraint>
         </uniquenessConstraints>
     </entity>
-    <entity name="Employee" representedClassName="EmployeeEntity" parentEntity="Person" syncable="YES" codeGenerationType="class">
+    <entity name="Employee" representedClassName="EmployeeEntity" parentEntity="Person" syncable="YES">
         <attribute name="photo" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
         <attribute name="salary" attributeType="Decimal" defaultValueString="0.0"/>
         <relationship name="department" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Department" inverseName="employees" inverseEntity="Department"/>
