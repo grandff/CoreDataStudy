@@ -19,6 +19,8 @@
 		1B3DF35724319D9F00E6F7E2 /* FaultingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF35624319D9F00E6F7E2 /* FaultingTableViewController.swift */; };
 		1B3DF35A2432ED9200E6F7E2 /* Blob.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3DF3592432ED9200E6F7E2 /* Blob.storyboard */; };
 		1B3DF35C2432EDDA00E6F7E2 /* BlobTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF35B2432EDDA00E6F7E2 /* BlobTableViewController.swift */; };
+		1B3DF3632434490E00E6F7E2 /* Validation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3DF3622434490E00E6F7E2 /* Validation.storyboard */; };
+		1B3DF3652434492D00E6F7E2 /* ValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF3642434492D00E6F7E2 /* ValidationViewController.swift */; };
 		1B55996D242B029E001A9137 /* Predicate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B55996C242B029E001A9137 /* Predicate.storyboard */; };
 		1B55996F242B02B0001A9137 /* PredicateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55996E242B02B0001A9137 /* PredicateViewController.swift */; };
 		1B90076E2428D72C00F63307 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90076D2428D72C00F63307 /* PagingViewController.swift */; };
@@ -61,6 +63,8 @@
 		1B3DF35624319D9F00E6F7E2 /* FaultingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaultingTableViewController.swift; sourceTree = "<group>"; };
 		1B3DF3592432ED9200E6F7E2 /* Blob.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Blob.storyboard; sourceTree = "<group>"; };
 		1B3DF35B2432EDDA00E6F7E2 /* BlobTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobTableViewController.swift; sourceTree = "<group>"; };
+		1B3DF3622434490E00E6F7E2 /* Validation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Validation.storyboard; sourceTree = "<group>"; };
+		1B3DF3642434492D00E6F7E2 /* ValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationViewController.swift; sourceTree = "<group>"; };
 		1B55996C242B029E001A9137 /* Predicate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Predicate.storyboard; sourceTree = "<group>"; };
 		1B55996E242B02B0001A9137 /* PredicateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateViewController.swift; sourceTree = "<group>"; };
 		1B90076D2428D72C00F63307 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +154,15 @@
 			path = Blob;
 			sourceTree = "<group>";
 		};
+		1B3DF3612434490000E6F7E2 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				1B3DF3622434490E00E6F7E2 /* Validation.storyboard */,
+				1B3DF3642434492D00E6F7E2 /* ValidationViewController.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
 		1B55996B242B026A001A9137 /* Predicate */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +207,7 @@
 		1BA5DA85241CE2C700065C42 /* CoreDataStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1B3DF3612434490000E6F7E2 /* Validation */,
 				1B3DF3582432ED8700E6F7E2 /* Blob */,
 				1B3DF35324319D7E00E6F7E2 /* Faulting */,
 				1B3DF34E2430821500E6F7E2 /* FetchedResultsController */,
@@ -313,6 +327,7 @@
 				1B3DF35A2432ED9200E6F7E2 /* Blob.storyboard in Resources */,
 				1B3ADCEF242078D00036618F /* BatchInsert.storyboard in Resources */,
 				1BA5DA8E241CE2C700065C42 /* Main.storyboard in Resources */,
+				1B3DF3632434490E00E6F7E2 /* Validation.storyboard in Resources */,
 				1BF83AFD241DF37000E9401F /* ManagedObject.storyboard in Resources */,
 				1BCBC8A7242DAE70000E3D84 /* Expression.storyboard in Resources */,
 				1B3DF3502430856200E6F7E2 /* FetchedResultsController.storyboard in Resources */,
@@ -328,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B3ADCF1242078E40036618F /* BatchInsertViewController.swift in Sources */,
+				1B3DF3652434492D00E6F7E2 /* ValidationViewController.swift in Sources */,
 				1BA5DA8B241CE2C700065C42 /* ViewController.swift in Sources */,
 				1BF83B03241DFA7000E9401F /* DataManager+Person.swift in Sources */,
 				1B9007702428D9BD00F63307 /* BatchSizeTableViewController.swift in Sources */,

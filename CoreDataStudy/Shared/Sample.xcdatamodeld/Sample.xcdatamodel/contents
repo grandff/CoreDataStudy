@@ -19,7 +19,7 @@
     </entity>
     <entity name="Person" representedClassName="PersonEntity" isAbstract="YES" syncable="YES" codeGenerationType="category">
         <attribute name="address" optional="YES" attributeType="String"/>
-        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="age" attributeType="Integer 16" minValueString="20" maxValueString="50" usesScalarValueType="YES"/>
         <attribute name="name" attributeType="String"/>
     </entity>
     <fetchRequest name="highSalary" entity="Employee" predicateString="department.name BEGINSWITH $deptName AND salary &gt;= 80000"/>
