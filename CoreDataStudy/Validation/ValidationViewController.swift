@@ -21,11 +21,16 @@ class ValidationViewController: UIViewController {
      
      */
     
+    //let departmentList = DataManager.shared.fetchdep
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+    
+    @IBAction func save(_ sender: Any) {
+        
+    }
+    
     
 
     /*

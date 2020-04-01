@@ -21,6 +21,12 @@
 		1B3DF35C2432EDDA00E6F7E2 /* BlobTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF35B2432EDDA00E6F7E2 /* BlobTableViewController.swift */; };
 		1B3DF3632434490E00E6F7E2 /* Validation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3DF3622434490E00E6F7E2 /* Validation.storyboard */; };
 		1B3DF3652434492D00E6F7E2 /* ValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF3642434492D00E6F7E2 /* ValidationViewController.swift */; };
+		1B3DF3682434872F00E6F7E2 /* Relationship.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3DF3672434872F00E6F7E2 /* Relationship.storyboard */; };
+		1B3DF36A2434876B00E6F7E2 /* RDepartmentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF3692434876B00E6F7E2 /* RDepartmentListViewController.swift */; };
+		1B3DF36C2434884C00E6F7E2 /* REmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF36B2434884C00E6F7E2 /* REmployeeListViewController.swift */; };
+		1B3DF36E243488F000E6F7E2 /* DataManger+Department.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF36D243488F000E6F7E2 /* DataManger+Department.swift */; };
+		1B3DF3702434896E00E6F7E2 /* DataManager+Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF36F2434896E00E6F7E2 /* DataManager+Employee.swift */; };
+		1B3DF37224348B9E00E6F7E2 /* RDepartmentComposerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF37124348B9E00E6F7E2 /* RDepartmentComposerTableViewController.swift */; };
 		1B55996D242B029E001A9137 /* Predicate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B55996C242B029E001A9137 /* Predicate.storyboard */; };
 		1B55996F242B02B0001A9137 /* PredicateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55996E242B02B0001A9137 /* PredicateViewController.swift */; };
 		1B90076E2428D72C00F63307 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90076D2428D72C00F63307 /* PagingViewController.swift */; };
@@ -65,6 +71,12 @@
 		1B3DF35B2432EDDA00E6F7E2 /* BlobTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobTableViewController.swift; sourceTree = "<group>"; };
 		1B3DF3622434490E00E6F7E2 /* Validation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Validation.storyboard; sourceTree = "<group>"; };
 		1B3DF3642434492D00E6F7E2 /* ValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationViewController.swift; sourceTree = "<group>"; };
+		1B3DF3672434872F00E6F7E2 /* Relationship.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Relationship.storyboard; sourceTree = "<group>"; };
+		1B3DF3692434876B00E6F7E2 /* RDepartmentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDepartmentListViewController.swift; sourceTree = "<group>"; };
+		1B3DF36B2434884C00E6F7E2 /* REmployeeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REmployeeListViewController.swift; sourceTree = "<group>"; };
+		1B3DF36D243488F000E6F7E2 /* DataManger+Department.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataManger+Department.swift"; sourceTree = "<group>"; };
+		1B3DF36F2434896E00E6F7E2 /* DataManager+Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataManager+Employee.swift"; sourceTree = "<group>"; };
+		1B3DF37124348B9E00E6F7E2 /* RDepartmentComposerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RDepartmentComposerTableViewController.swift; sourceTree = "<group>"; };
 		1B55996C242B029E001A9137 /* Predicate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Predicate.storyboard; sourceTree = "<group>"; };
 		1B55996E242B02B0001A9137 /* PredicateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateViewController.swift; sourceTree = "<group>"; };
 		1B90076D2428D72C00F63307 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +175,19 @@
 			path = Validation;
 			sourceTree = "<group>";
 		};
+		1B3DF3662434872000E6F7E2 /* Relationship */ = {
+			isa = PBXGroup;
+			children = (
+				1B3DF3672434872F00E6F7E2 /* Relationship.storyboard */,
+				1B3DF3692434876B00E6F7E2 /* RDepartmentListViewController.swift */,
+				1B3DF36B2434884C00E6F7E2 /* REmployeeListViewController.swift */,
+				1B3DF36D243488F000E6F7E2 /* DataManger+Department.swift */,
+				1B3DF36F2434896E00E6F7E2 /* DataManager+Employee.swift */,
+				1B3DF37124348B9E00E6F7E2 /* RDepartmentComposerTableViewController.swift */,
+			);
+			path = Relationship;
+			sourceTree = "<group>";
+		};
 		1B55996B242B026A001A9137 /* Predicate */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +232,7 @@
 		1BA5DA85241CE2C700065C42 /* CoreDataStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1B3DF3662434872000E6F7E2 /* Relationship */,
 				1B3DF3612434490000E6F7E2 /* Validation */,
 				1B3DF3582432ED8700E6F7E2 /* Blob */,
 				1B3DF35324319D7E00E6F7E2 /* Faulting */,
@@ -325,6 +351,7 @@
 				1B3ADCEB242078860036618F /* department.json in Resources */,
 				1BA5DA93241CE2C900065C42 /* Assets.xcassets in Resources */,
 				1B3DF35A2432ED9200E6F7E2 /* Blob.storyboard in Resources */,
+				1B3DF3682434872F00E6F7E2 /* Relationship.storyboard in Resources */,
 				1B3ADCEF242078D00036618F /* BatchInsert.storyboard in Resources */,
 				1BA5DA8E241CE2C700065C42 /* Main.storyboard in Resources */,
 				1B3DF3632434490E00E6F7E2 /* Validation.storyboard in Resources */,
@@ -345,9 +372,11 @@
 				1B3ADCF1242078E40036618F /* BatchInsertViewController.swift in Sources */,
 				1B3DF3652434492D00E6F7E2 /* ValidationViewController.swift in Sources */,
 				1BA5DA8B241CE2C700065C42 /* ViewController.swift in Sources */,
+				1B3DF36C2434884C00E6F7E2 /* REmployeeListViewController.swift in Sources */,
 				1BF83B03241DFA7000E9401F /* DataManager+Person.swift in Sources */,
 				1B9007702428D9BD00F63307 /* BatchSizeTableViewController.swift in Sources */,
 				1B55996F242B02B0001A9137 /* PredicateViewController.swift in Sources */,
+				1B3DF3702434896E00E6F7E2 /* DataManager+Employee.swift in Sources */,
 				1B900776242A04B400F63307 /* AsyncFetchingTableViewController.swift in Sources */,
 				1BA5DAA6241CF8DF00065C42 /* DataManager.swift in Sources */,
 				1BA5DA87241CE2C700065C42 /* AppDelegate.swift in Sources */,
@@ -357,6 +386,7 @@
 				1BCBC8A9242DAF09000E3D84 /* ExpressionViewController.swift in Sources */,
 				1B3DF35C2432EDDA00E6F7E2 /* BlobTableViewController.swift in Sources */,
 				1BF83B06241DFB8B00E9401F /* PersonEntity+CoreDataClass.swift in Sources */,
+				1B3DF36A2434876B00E6F7E2 /* RDepartmentListViewController.swift in Sources */,
 				1B3DF352243085D400E6F7E2 /* FetchedResultsControllerTableViewController.swift in Sources */,
 				1B9C20122424A13400A09FD8 /* FetchAllViewController.swift in Sources */,
 				1B3ADCF324207A790036618F /* DataManager+BatchInsert.swift in Sources */,
@@ -367,8 +397,10 @@
 				1B9007722429B54000F63307 /* StoredFetchRequestTableViewController.swift in Sources */,
 				1BA5DA91241CE2C700065C42 /* CoreDataStudy.xcdatamodeld in Sources */,
 				1B9C20162424C24B00A09FD8 /* ResultTypesViewController.swift in Sources */,
+				1B3DF37224348B9E00E6F7E2 /* RDepartmentComposerTableViewController.swift in Sources */,
 				1BF83AFF241DF62000E9401F /* ManagedObjectViewController.swift in Sources */,
 				1BA5DA89241CE2C700065C42 /* SceneDelegate.swift in Sources */,
+				1B3DF36E243488F000E6F7E2 /* DataManger+Department.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
