@@ -22,10 +22,16 @@
         <attribute name="age" attributeType="Integer 16" minValueString="20" maxValueString="50" usesScalarValueType="YES"/>
         <attribute name="name" attributeType="String"/>
     </entity>
+    <entity name="Task" representedClassName="TaskEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="done" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="task" attributeType="String"/>
+    </entity>
     <fetchRequest name="highSalary" entity="Employee" predicateString="department.name BEGINSWITH $deptName AND salary &gt;= 80000"/>
     <elements>
         <element name="Department" positionX="-18" positionY="45" width="128" height="41"/>
         <element name="Employee" positionX="-36" positionY="36" width="128" height="88"/>
         <element name="Person" positionX="-54" positionY="-9" width="128" height="88"/>
+        <element name="Task" positionX="-27" positionY="54" width="128" height="88"/>
     </elements>
 </model>
