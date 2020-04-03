@@ -32,6 +32,12 @@
 		1B3DF379243592E200E6F7E2 /* BatchProcessing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3DF378243592E200E6F7E2 /* BatchProcessing.storyboard */; };
 		1B3DF37B243592FF00E6F7E2 /* BatchProcessingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF37A243592FF00E6F7E2 /* BatchProcessingTableViewController.swift */; };
 		1B3DF37D2435931000E6F7E2 /* DataManager+BatchProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF37C2435931000E6F7E2 /* DataManager+BatchProcessing.swift */; };
+		1B3DF3802437111D00E6F7E2 /* Concurrency.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3DF37F2437111D00E6F7E2 /* Concurrency.storyboard */; };
+		1B3DF3822437114A00E6F7E2 /* ConcurrencyTopicListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF3812437114A00E6F7E2 /* ConcurrencyTopicListTableViewController.swift */; };
+		1B3DF38424371DAB00E6F7E2 /* DataManager+Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF38324371DAB00E6F7E2 /* DataManager+Concurrency.swift */; };
+		1B3DF38624371F4000E6F7E2 /* BackgroundTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF38524371F4000E6F7E2 /* BackgroundTaskTableViewController.swift */; };
+		1B3DF3882437220A00E6F7E2 /* BackgroundContextTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF3872437220A00E6F7E2 /* BackgroundContextTableViewController.swift */; };
+		1B3DF38A2437271A00E6F7E2 /* ChildContextTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF3892437271A00E6F7E2 /* ChildContextTableViewController.swift */; };
 		1B55996D242B029E001A9137 /* Predicate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B55996C242B029E001A9137 /* Predicate.storyboard */; };
 		1B55996F242B02B0001A9137 /* PredicateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55996E242B02B0001A9137 /* PredicateViewController.swift */; };
 		1B90076E2428D72C00F63307 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90076D2428D72C00F63307 /* PagingViewController.swift */; };
@@ -87,6 +93,12 @@
 		1B3DF378243592E200E6F7E2 /* BatchProcessing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BatchProcessing.storyboard; sourceTree = "<group>"; };
 		1B3DF37A243592FF00E6F7E2 /* BatchProcessingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchProcessingTableViewController.swift; sourceTree = "<group>"; };
 		1B3DF37C2435931000E6F7E2 /* DataManager+BatchProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataManager+BatchProcessing.swift"; sourceTree = "<group>"; };
+		1B3DF37F2437111D00E6F7E2 /* Concurrency.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Concurrency.storyboard; sourceTree = "<group>"; };
+		1B3DF3812437114A00E6F7E2 /* ConcurrencyTopicListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyTopicListTableViewController.swift; sourceTree = "<group>"; };
+		1B3DF38324371DAB00E6F7E2 /* DataManager+Concurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataManager+Concurrency.swift"; sourceTree = "<group>"; };
+		1B3DF38524371F4000E6F7E2 /* BackgroundTaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTaskTableViewController.swift; sourceTree = "<group>"; };
+		1B3DF3872437220A00E6F7E2 /* BackgroundContextTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundContextTableViewController.swift; sourceTree = "<group>"; };
+		1B3DF3892437271A00E6F7E2 /* ChildContextTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildContextTableViewController.swift; sourceTree = "<group>"; };
 		1B55996C242B029E001A9137 /* Predicate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Predicate.storyboard; sourceTree = "<group>"; };
 		1B55996E242B02B0001A9137 /* PredicateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateViewController.swift; sourceTree = "<group>"; };
 		1B90076D2428D72C00F63307 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +220,19 @@
 			path = BatchProcessing;
 			sourceTree = "<group>";
 		};
+		1B3DF37E243710EC00E6F7E2 /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				1B3DF37F2437111D00E6F7E2 /* Concurrency.storyboard */,
+				1B3DF3812437114A00E6F7E2 /* ConcurrencyTopicListTableViewController.swift */,
+				1B3DF38324371DAB00E6F7E2 /* DataManager+Concurrency.swift */,
+				1B3DF38524371F4000E6F7E2 /* BackgroundTaskTableViewController.swift */,
+				1B3DF3872437220A00E6F7E2 /* BackgroundContextTableViewController.swift */,
+				1B3DF3892437271A00E6F7E2 /* ChildContextTableViewController.swift */,
+			);
+			path = Concurrency;
+			sourceTree = "<group>";
+		};
 		1B55996B242B026A001A9137 /* Predicate */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +277,7 @@
 		1BA5DA85241CE2C700065C42 /* CoreDataStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1B3DF37E243710EC00E6F7E2 /* Concurrency */,
 				1B3DF377243592CB00E6F7E2 /* BatchProcessing */,
 				1B3DF3662434872000E6F7E2 /* Relationship */,
 				1B3DF3612434490000E6F7E2 /* Validation */,
@@ -372,6 +398,7 @@
 				1B55996D242B029E001A9137 /* Predicate.storyboard in Resources */,
 				1BA5DA96241CE2C900065C42 /* LaunchScreen.storyboard in Resources */,
 				1B9C20102424A03900A09FD8 /* FetchRequest.storyboard in Resources */,
+				1B3DF3802437111D00E6F7E2 /* Concurrency.storyboard in Resources */,
 				1B3ADCEB242078860036618F /* department.json in Resources */,
 				1BA5DA93241CE2C900065C42 /* Assets.xcassets in Resources */,
 				1B3DF35A2432ED9200E6F7E2 /* Blob.storyboard in Resources */,
@@ -396,6 +423,7 @@
 				1B3DF37B243592FF00E6F7E2 /* BatchProcessingTableViewController.swift in Sources */,
 				1B3DF376243499B600E6F7E2 /* EmployeeEntity+CoreDataProperties.swift in Sources */,
 				1B3ADCF1242078E40036618F /* BatchInsertViewController.swift in Sources */,
+				1B3DF38A2437271A00E6F7E2 /* ChildContextTableViewController.swift in Sources */,
 				1B3DF3652434492D00E6F7E2 /* ValidationViewController.swift in Sources */,
 				1BA5DA8B241CE2C700065C42 /* ViewController.swift in Sources */,
 				1B3DF375243499B600E6F7E2 /* EmployeeEntity+CoreDataClass.swift in Sources */,
@@ -404,8 +432,10 @@
 				1B9007702428D9BD00F63307 /* BatchSizeTableViewController.swift in Sources */,
 				1B3DF37D2435931000E6F7E2 /* DataManager+BatchProcessing.swift in Sources */,
 				1B55996F242B02B0001A9137 /* PredicateViewController.swift in Sources */,
+				1B3DF38424371DAB00E6F7E2 /* DataManager+Concurrency.swift in Sources */,
 				1B3DF3702434896E00E6F7E2 /* DataManager+Employee.swift in Sources */,
 				1B900776242A04B400F63307 /* AsyncFetchingTableViewController.swift in Sources */,
+				1B3DF38624371F4000E6F7E2 /* BackgroundTaskTableViewController.swift in Sources */,
 				1BA5DAA6241CF8DF00065C42 /* DataManager.swift in Sources */,
 				1BA5DA87241CE2C700065C42 /* AppDelegate.swift in Sources */,
 				1B3DF35724319D9F00E6F7E2 /* FaultingTableViewController.swift in Sources */,
@@ -424,7 +454,9 @@
 				1B9007742429B80D00F63307 /* FetchedPropertyTableViewController.swift in Sources */,
 				1B9007722429B54000F63307 /* StoredFetchRequestTableViewController.swift in Sources */,
 				1BA5DA91241CE2C700065C42 /* CoreDataStudy.xcdatamodeld in Sources */,
+				1B3DF3882437220A00E6F7E2 /* BackgroundContextTableViewController.swift in Sources */,
 				1B9C20162424C24B00A09FD8 /* ResultTypesViewController.swift in Sources */,
+				1B3DF3822437114A00E6F7E2 /* ConcurrencyTopicListTableViewController.swift in Sources */,
 				1B3DF37224348B9E00E6F7E2 /* RDepartmentComposerTableViewController.swift in Sources */,
 				1BF83AFF241DF62000E9401F /* ManagedObjectViewController.swift in Sources */,
 				1BA5DA89241CE2C700065C42 /* SceneDelegate.swift in Sources */,

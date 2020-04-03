@@ -26,7 +26,11 @@ class DataManager{
      7. Appdelegate 에서 Core Data 초기화
      */
     
-    
+    /*
+        Concurrency
+     1. Background Context에 접근할 수 있도록 새로운 context 생성
+     
+     */
     
     // 싱글톤으로 구현 (2)
     static let shared = DataManager()
@@ -65,5 +69,12 @@ class DataManager{
         }
     }
     
-    
+    // Background Context (2-1)
+    lazy var backgroundContext : NSManagedObjectContext = {
+        guard let context = container?.newBackgroundContext() else{
+            fatalError()
+        }
+        
+        return context
+    }()
 }
