@@ -38,6 +38,7 @@
 		1B3DF38624371F4000E6F7E2 /* BackgroundTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF38524371F4000E6F7E2 /* BackgroundTaskTableViewController.swift */; };
 		1B3DF3882437220A00E6F7E2 /* BackgroundContextTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF3872437220A00E6F7E2 /* BackgroundContextTableViewController.swift */; };
 		1B3DF38A2437271A00E6F7E2 /* ChildContextTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF3892437271A00E6F7E2 /* ChildContextTableViewController.swift */; };
+		1B3DF38C243AE1BB00E6F7E2 /* SyncAndMergeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3DF38B243AE1BB00E6F7E2 /* SyncAndMergeViewController.swift */; };
 		1B55996D242B029E001A9137 /* Predicate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B55996C242B029E001A9137 /* Predicate.storyboard */; };
 		1B55996F242B02B0001A9137 /* PredicateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B55996E242B02B0001A9137 /* PredicateViewController.swift */; };
 		1B90076E2428D72C00F63307 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B90076D2428D72C00F63307 /* PagingViewController.swift */; };
@@ -99,6 +100,7 @@
 		1B3DF38524371F4000E6F7E2 /* BackgroundTaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTaskTableViewController.swift; sourceTree = "<group>"; };
 		1B3DF3872437220A00E6F7E2 /* BackgroundContextTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundContextTableViewController.swift; sourceTree = "<group>"; };
 		1B3DF3892437271A00E6F7E2 /* ChildContextTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildContextTableViewController.swift; sourceTree = "<group>"; };
+		1B3DF38B243AE1BB00E6F7E2 /* SyncAndMergeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncAndMergeViewController.swift; sourceTree = "<group>"; };
 		1B55996C242B029E001A9137 /* Predicate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Predicate.storyboard; sourceTree = "<group>"; };
 		1B55996E242B02B0001A9137 /* PredicateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateViewController.swift; sourceTree = "<group>"; };
 		1B90076D2428D72C00F63307 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				1B3DF38524371F4000E6F7E2 /* BackgroundTaskTableViewController.swift */,
 				1B3DF3872437220A00E6F7E2 /* BackgroundContextTableViewController.swift */,
 				1B3DF3892437271A00E6F7E2 /* ChildContextTableViewController.swift */,
+				1B3DF38B243AE1BB00E6F7E2 /* SyncAndMergeViewController.swift */,
 			);
 			path = Concurrency;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				1B55996F242B02B0001A9137 /* PredicateViewController.swift in Sources */,
 				1B3DF38424371DAB00E6F7E2 /* DataManager+Concurrency.swift in Sources */,
 				1B3DF3702434896E00E6F7E2 /* DataManager+Employee.swift in Sources */,
+				1B3DF38C243AE1BB00E6F7E2 /* SyncAndMergeViewController.swift in Sources */,
 				1B900776242A04B400F63307 /* AsyncFetchingTableViewController.swift in Sources */,
 				1B3DF38624371F4000E6F7E2 /* BackgroundTaskTableViewController.swift in Sources */,
 				1BA5DAA6241CF8DF00065C42 /* DataManager.swift in Sources */,

@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -93,6 +94,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="4pL-Fz-EZG" kind="show" id="cdc-f5-XvY"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -267,6 +271,151 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9yD-a3-C2y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1177" y="741"/>
+        </scene>
+        <!--Sync & Merge Policy-->
+        <scene sceneID="60D-du-ErP">
+            <objects>
+                <viewController id="4pL-Fz-EZG" customClass="SyncAndMergeViewController" customModule="CoreDataStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h2K-ND-ltz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="9o2-aH-EfR">
+                                <rect key="frame" x="34" y="211.5" width="346" height="473"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAV-tG-4jP">
+                                        <rect key="frame" x="122.5" y="0.0" width="101.5" height="48"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="KKa-U0-bJP">
+                                        <rect key="frame" x="0.0" y="87" width="346" height="386"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="2Qg-p9-FF4">
+                                                <rect key="frame" x="0.0" y="0.0" width="75.5" height="386"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Context" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cq-xV-LSP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="75.5" height="53"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dR6-0o-WTa">
+                                                        <rect key="frame" x="0.0" y="88" width="75.5" height="33.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GM-g5-faw">
+                                                        <rect key="frame" x="0.0" y="156.5" width="75.5" height="34.5"/>
+                                                        <state key="normal" title="Fetch"/>
+                                                        <connections>
+                                                            <action selector="fetchIntoMainContext:" destination="4pL-Fz-EZG" eventType="touchUpInside" id="3RW-Zp-cIJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Fe-V8-8I9">
+                                                        <rect key="frame" x="0.0" y="226" width="75.5" height="30"/>
+                                                        <state key="normal" title="Update"/>
+                                                        <connections>
+                                                            <action selector="updateInMainContext:" destination="4pL-Fz-EZG" eventType="touchUpInside" id="0AI-8J-7J0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpF-R3-XJw">
+                                                        <rect key="frame" x="0.0" y="291" width="75.5" height="30"/>
+                                                        <state key="normal" title="Save"/>
+                                                        <connections>
+                                                            <action selector="saveInMainContext:" destination="4pL-Fz-EZG" eventType="touchUpInside" id="bXM-6d-gpO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vf-kb-aq4">
+                                                        <rect key="frame" x="0.0" y="356" width="75.5" height="30"/>
+                                                        <state key="normal" title="Refresh"/>
+                                                        <connections>
+                                                            <action selector="refreshInMainContext:" destination="4pL-Fz-EZG" eventType="touchUpInside" id="Zx5-R8-0Bs"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15N-ek-Zji">
+                                                <rect key="frame" x="144.5" y="0.0" width="18" height="386"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="18" id="xMJ-vi-nbm"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="5J0-Th-u5w">
+                                                <rect key="frame" x="231.5" y="0.0" width="114.5" height="386"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background Context" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8h-PE-ueG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="114.5" height="53"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpi-m1-bGD">
+                                                        <rect key="frame" x="24" y="88" width="66.5" height="33.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pA-uM-Iss">
+                                                        <rect key="frame" x="38" y="156.5" width="39" height="34.5"/>
+                                                        <state key="normal" title="Fetch"/>
+                                                        <connections>
+                                                            <action selector="fetchIntoBackgroundContext:" destination="4pL-Fz-EZG" eventType="touchUpInside" id="lVV-G1-z01"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOJ-pn-Wfm">
+                                                        <rect key="frame" x="32" y="226" width="51" height="30"/>
+                                                        <state key="normal" title="Update"/>
+                                                        <connections>
+                                                            <action selector="updateInBackgroundContext:" destination="4pL-Fz-EZG" eventType="touchUpInside" id="ZlB-vQ-yao"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXc-bn-T5S">
+                                                        <rect key="frame" x="40.5" y="291" width="34" height="30"/>
+                                                        <state key="normal" title="Save"/>
+                                                        <connections>
+                                                            <action selector="saveInBackgroundContext:" destination="4pL-Fz-EZG" eventType="touchUpInside" id="fGH-1X-Gf0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSc-ar-tzT">
+                                                        <rect key="frame" x="31" y="356" width="53" height="30"/>
+                                                        <state key="normal" title="Refresh"/>
+                                                        <connections>
+                                                            <action selector="refreshInBackgroundContext:" destination="4pL-Fz-EZG" eventType="touchUpInside" id="iWG-gz-YK5"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="5J0-Th-u5w" firstAttribute="width" secondItem="2Qg-p9-FF4" secondAttribute="width" multiplier="1.51656" id="ZmR-bq-rgh"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9o2-aH-EfR" firstAttribute="centerX" secondItem="h2K-ND-ltz" secondAttribute="centerX" id="7g6-fF-5Y1"/>
+                            <constraint firstItem="9o2-aH-EfR" firstAttribute="centerY" secondItem="h2K-ND-ltz" secondAttribute="centerY" id="Fhj-ha-RRL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1a3-4n-nTm"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sync &amp; Merge Policy" id="PiD-sb-MZV">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="Nul-Op-G40"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backgroundContextSalaryLabel" destination="Hpi-m1-bGD" id="R5e-5n-WU8"/>
+                        <outlet property="mainContextSalaryLabel" destination="dR6-0o-WTa" id="ZJy-St-8Vs"/>
+                        <outlet property="nameLabel" destination="AAV-tG-4jP" id="eFq-E6-pbL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OWA-aW-nLf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1944.9275362318842" y="740.625"/>
         </scene>
     </scenes>
 </document>
