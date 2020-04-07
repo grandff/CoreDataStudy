@@ -289,7 +289,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6EU-lU-mCl">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="3. Performance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6EU-lU-mCl">
                                                     <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -298,6 +298,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="iJs-vE-TBc" kind="show" id="VYB-bP-RG2"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="kuc-J0-HRR" style="IBUITableViewCellStyleDefault" id="Fs8-cX-ZV5">
                                         <rect key="frame" x="0.0" y="699" width="414" height="43.5"/>
@@ -467,6 +470,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lpz-9o-wnr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1508" y="437"/>
+        </scene>
+        <!--Performance-->
+        <scene sceneID="sy2-3x-IOz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Performance" id="iJs-vE-TBc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rzT-Aw-OWt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="klF-UL-pSu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1310" y="497"/>
         </scene>
     </scenes>
 </document>

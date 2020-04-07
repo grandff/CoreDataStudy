@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0F6481243C2F38001E99D4 /* Performance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B0F6480243C2F38001E99D4 /* Performance.storyboard */; };
+		1B0F6483243C2FC9001E99D4 /* PredicateOptimizaerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F6482243C2FC9001E99D4 /* PredicateOptimizaerTableViewController.swift */; };
+		1B0F6485243C32EA001E99D4 /* FetchLimitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F6484243C32EA001E99D4 /* FetchLimitTableViewController.swift */; };
+		1B0F6487243C34CD001E99D4 /* FetchBatchSizeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F6486243C34CD001E99D4 /* FetchBatchSizeTableViewController.swift */; };
+		1B0F6489243C3726001E99D4 /* PartialFaultingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F6488243C3726001E99D4 /* PartialFaultingTableViewController.swift */; };
+		1B0F648B243C39D1001E99D4 /* PrefetchingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F648A243C39D1001E99D4 /* PrefetchingTableViewController.swift */; };
 		1B3ADCEA242078860036618F /* employee.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B3ADCE7242078850036618F /* employee.json */; };
 		1B3ADCEB242078860036618F /* department.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B3ADCE8242078860036618F /* department.json */; };
 		1B3ADCEC242078860036618F /* RawData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3ADCE9242078860036618F /* RawData.swift */; };
@@ -69,6 +75,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B0F6480243C2F38001E99D4 /* Performance.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Performance.storyboard; sourceTree = "<group>"; };
+		1B0F6482243C2FC9001E99D4 /* PredicateOptimizaerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredicateOptimizaerTableViewController.swift; sourceTree = "<group>"; };
+		1B0F6484243C32EA001E99D4 /* FetchLimitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchLimitTableViewController.swift; sourceTree = "<group>"; };
+		1B0F6486243C34CD001E99D4 /* FetchBatchSizeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBatchSizeTableViewController.swift; sourceTree = "<group>"; };
+		1B0F6488243C3726001E99D4 /* PartialFaultingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialFaultingTableViewController.swift; sourceTree = "<group>"; };
+		1B0F648A243C39D1001E99D4 /* PrefetchingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefetchingTableViewController.swift; sourceTree = "<group>"; };
 		1B3ADCE7242078850036618F /* employee.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = employee.json; sourceTree = "<group>"; };
 		1B3ADCE8242078860036618F /* department.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = department.json; sourceTree = "<group>"; };
 		1B3ADCE9242078860036618F /* RawData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawData.swift; sourceTree = "<group>"; };
@@ -143,6 +155,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B0F647F243C2F29001E99D4 /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				1B0F6480243C2F38001E99D4 /* Performance.storyboard */,
+				1B0F6482243C2FC9001E99D4 /* PredicateOptimizaerTableViewController.swift */,
+				1B0F6484243C32EA001E99D4 /* FetchLimitTableViewController.swift */,
+				1B0F6486243C34CD001E99D4 /* FetchBatchSizeTableViewController.swift */,
+				1B0F6488243C3726001E99D4 /* PartialFaultingTableViewController.swift */,
+				1B0F648A243C39D1001E99D4 /* PrefetchingTableViewController.swift */,
+			);
+			path = Performance;
+			sourceTree = "<group>";
+		};
 		1B3ADCE6242078690036618F /* RawData */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +305,7 @@
 		1BA5DA85241CE2C700065C42 /* CoreDataStudy */ = {
 			isa = PBXGroup;
 			children = (
+				1B0F647F243C2F29001E99D4 /* Performance */,
 				1B3DF37E243710EC00E6F7E2 /* Concurrency */,
 				1B3DF377243592CB00E6F7E2 /* BatchProcessing */,
 				1B3DF3662434872000E6F7E2 /* Relationship */,
@@ -405,6 +431,7 @@
 				1B3ADCEB242078860036618F /* department.json in Resources */,
 				1BA5DA93241CE2C900065C42 /* Assets.xcassets in Resources */,
 				1B3DF35A2432ED9200E6F7E2 /* Blob.storyboard in Resources */,
+				1B0F6481243C2F38001E99D4 /* Performance.storyboard in Resources */,
 				1B3DF3682434872F00E6F7E2 /* Relationship.storyboard in Resources */,
 				1B3ADCEF242078D00036618F /* BatchInsert.storyboard in Resources */,
 				1BA5DA8E241CE2C700065C42 /* Main.storyboard in Resources */,
@@ -443,6 +470,7 @@
 				1BA5DAA6241CF8DF00065C42 /* DataManager.swift in Sources */,
 				1BA5DA87241CE2C700065C42 /* AppDelegate.swift in Sources */,
 				1B3DF35724319D9F00E6F7E2 /* FaultingTableViewController.swift in Sources */,
+				1B0F6487243C34CD001E99D4 /* FetchBatchSizeTableViewController.swift in Sources */,
 				1B90076E2428D72C00F63307 /* PagingViewController.swift in Sources */,
 				1BF83B01241DF7FC00E9401F /* PersonComposeViewController.swift in Sources */,
 				1BCBC8A9242DAF09000E3D84 /* ExpressionViewController.swift in Sources */,
@@ -452,14 +480,18 @@
 				1B3DF352243085D400E6F7E2 /* FetchedResultsControllerTableViewController.swift in Sources */,
 				1B9C20122424A13400A09FD8 /* FetchAllViewController.swift in Sources */,
 				1B3ADCF324207A790036618F /* DataManager+BatchInsert.swift in Sources */,
+				1B0F6483243C2FC9001E99D4 /* PredicateOptimizaerTableViewController.swift in Sources */,
+				1B0F6489243C3726001E99D4 /* PartialFaultingTableViewController.swift in Sources */,
 				1BA5DAA9241CFA7700065C42 /* Sample.xcdatamodeld in Sources */,
 				1B3ADCEC242078860036618F /* RawData.swift in Sources */,
 				1B9C20142424A7FA00A09FD8 /* SortTableViewController.swift in Sources */,
+				1B0F648B243C39D1001E99D4 /* PrefetchingTableViewController.swift in Sources */,
 				1B9007742429B80D00F63307 /* FetchedPropertyTableViewController.swift in Sources */,
 				1B9007722429B54000F63307 /* StoredFetchRequestTableViewController.swift in Sources */,
 				1BA5DA91241CE2C700065C42 /* CoreDataStudy.xcdatamodeld in Sources */,
 				1B3DF3882437220A00E6F7E2 /* BackgroundContextTableViewController.swift in Sources */,
 				1B9C20162424C24B00A09FD8 /* ResultTypesViewController.swift in Sources */,
+				1B0F6485243C32EA001E99D4 /* FetchLimitTableViewController.swift in Sources */,
 				1B3DF3822437114A00E6F7E2 /* ConcurrencyTopicListTableViewController.swift in Sources */,
 				1B3DF37224348B9E00E6F7E2 /* RDepartmentComposerTableViewController.swift in Sources */,
 				1BF83AFF241DF62000E9401F /* ManagedObjectViewController.swift in Sources */,
